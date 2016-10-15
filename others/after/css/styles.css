@@ -1,0 +1,139 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: lightgrey;
+  font-family: 'Helvetica','Arial', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+
+  background-color: white;
+  border-radius: 0;
+  border: 0;
+}
+
+
+.navbar-brand h1 { /* website name */
+  font-family: 'Poiret One', 'Helvetica',sans-serif;
+  color: black;
+  font-size: 2.1em;
+
+  font-weight: bold;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/**navbar**/
+#nav-list {
+  text-align: center;
+}
+
+#nav-list a {
+  background-color: transparent;
+  color:darkgrey;
+}
+
+#nav-list a:hover {
+  color: black;
+  background-color: #cc1033;
+}
+.navbar-header .icon-bar {
+  border: 1px solid black;
+
+}
+
+.navbar-header button.navbar-toggle {
+  border: 1px solid transparent;
+}
+
+.navbar-headder .icon-bar:hover, .navbar-header button.navbar-toggle:hover {
+  background-color: #cc1033;
+}
+
+.navbar-headder .icon-bar:active, .navbar-header button.navbar-toggle:active{
+  background-color: #cc1033;
+}
+/** end header**/
+
+.container .jumbotron {
+  box-shadow: 0 0 50px grey;
+  border: 2px solid grey;
+}
+
+/** activities **/
+.container #home-tiles {
+  padding-bottom: 250px;
+  padding-top: 20px;
+}
+.container #home-tiles #activities #activity-tile {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+
+  padding-left: 20px;
+}
+
+
+/** large devices **/
+@media (min-width: 1200px){
+
+  .jumbotron {
+    margin-top: 20px;
+    background: url("../images/run1_1200.jpg") no-repeat;
+    height: 675px;
+
+  }
+}
+
+/** medium devices only **/
+@media (max-width: 1199px) and (min-width: 992px){
+  /* Header */
+  .navbar-brand h1 {
+    font-size: 2em;
+  }
+
+  .jumbotron {
+    margin-top: 20px;
+    background: url("../images/run1_990.jpg") no-repeat;
+    height: 660px;
+
+  }
+
+
+}
+
+/** small devices only **/
+@media (max-width: 991px) and (min-width: 768px) {
+  .navbar-brand h1 {
+    font-size: 1.9em;
+  }
+
+  .jumbotron {
+    margin-top: 10px;
+    background: url("../images/run1_768.jpg") no-repeat;
+    height: 512px;
+
+  }
+}
+
+/** extra small devices only **/
+@media (max-width: 768px){
+  .navbar-header {
+    height: 60px;
+  }
+  .navbar-brand h1 {
+    font-size: 1.8em;
+  }
+
+  .container .jumbotron {
+    margin-top: 20px;
+    padding: 0;
+
+  }
+}
