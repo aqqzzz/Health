@@ -1,14 +1,14 @@
 body {
   font-size: 16px;
   color: black;
-  background-color: lightgrey;
+  background-color: lightgray;
   font-family: 'Helvetica','Arial', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
 
-  background-color: white;
+  background-color: black;
   border-radius: 0;
   border: 0;
 }
@@ -16,7 +16,7 @@ body {
 
 .navbar-brand h1 { /* website name */
   font-family: 'Poiret One', 'Helvetica',sans-serif;
-  color: black;
+  color: white;
   font-size: 2.1em;
 
   font-weight: bold;
@@ -40,11 +40,11 @@ body {
 }
 
 #nav-list a:hover {
-  color: black;
-  background-color: #cc1033;
+  color: antiquewhite;
+  background-color: #cc3333;
 }
 .navbar-header .icon-bar {
-  border: 1px solid black;
+  border: 1px solid antiquewhite;
 
 }
 
@@ -53,31 +53,103 @@ body {
 }
 
 .navbar-headder .icon-bar:hover, .navbar-header button.navbar-toggle:hover {
-  background-color: #cc1033;
+  background-color: #cc3333;
 }
 
 .navbar-headder .icon-bar:active, .navbar-header button.navbar-toggle:active{
-  background-color: #cc1033;
+  background-color: #cc3333;
 }
 /** end header**/
 
+/** my set for bootstrap component**/
 .container .jumbotron {
   box-shadow: 0 0 50px grey;
   border: 2px solid grey;
 }
 
-/** activities **/
-.container #home-tiles {
-  padding-bottom: 250px;
-  padding-top: 20px;
-}
-.container #home-tiles #activities #activity-tile {
-  text-transform: uppercase;
-  background-color: black;
-  color: white;
+.thumbnail {
+    min-height: 50px;
 
-  padding-left: 20px;
+    margin-right:3px;
+    margin-left: 3px;
+
+    clear: both;
 }
+
+/** home-tiles **/
+.container #home-tiles .show-s {
+    text-transform: uppercase;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: auto;
+}
+
+.thumbnail img:hover {
+    box-shadow: 0 0 20px black;
+}
+
+/** activities **/
+
+
+.container #home-tiles #activities #activity-tile .thumbnail{
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+
+}
+
+.container #home-tiles #activities #activity-tile .thumbnail a {
+    color: white;
+}
+
+.container #home-tiles #activities #activity-tile .thumbnail img:hover {
+
+}
+
+.container #home-tiles #activities #activity-tile .show-s {
+    background-color: black;
+
+}
+.container #home-tiles #activities #activity-tile .show-s a {
+    color: white;
+
+}
+
+/** blogs **/
+.container #home-tiles #blogs #blog-tile .thumbnail {
+    text-transform: uppercase;
+    background-color: #cc3333;
+}
+.container #home-tiles #blogs #blog-tile .thumbnail a {
+    color:white;
+}
+
+.container #home-tiles #blogs #blog-tile .show-s {
+    background: #cc3333;
+}
+
+.container #home-tiles #blogs #blog-tile .show-s a {
+    color: white;
+}
+
+/** footer **/
+div.panel-footer {
+    padding: 0;
+    background-color: black;
+    color: white;
+
+    clear: both;
+}
+
+div.panel-footer i {
+    color: #cc3333;
+}
+
+div.panel-footer i:hover {
+    color: darkred;
+}
+
 
 
 /** large devices **/
@@ -89,6 +161,17 @@ body {
     height: 675px;
 
   }
+
+    /**.container #activity-tile {
+        height: 430px;
+        background-color: black;
+        color: white;
+    }
+
+    .container #activity-tile a {
+        text-decoration: none;
+    }**/
+
 }
 
 /** medium devices only **/
@@ -105,6 +188,16 @@ body {
 
   }
 
+    /**.container #activity-tile {
+        height: 420px;
+        background-color: black;
+        color: white;
+    }
+
+    .container #activity-tile a {
+        text-decoration: none;
+    }**/
+
 
 }
 
@@ -120,6 +213,24 @@ body {
     height: 512px;
 
   }
+
+  .panel-footer {
+      margin-bottom: 0;
+  }
+
+    /**.container #activity-tile {
+        height: 70px;
+        background-color: black;
+        color: white;
+
+        margin-bottom: 30px;
+        margin-right: 80px;
+    }
+
+    .container #activity-tile a {
+        text-decoration: none;
+        color:white;
+    }**/
 }
 
 /** extra small devices only **/
@@ -136,4 +247,7 @@ body {
     padding: 0;
 
   }
+
+
+
 }
