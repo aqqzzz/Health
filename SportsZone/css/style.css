@@ -1,0 +1,56 @@
+
+
+@font-face
+{
+    font-family: mfyuehei;
+    src: url(http://hxgdzyuyi.github.io/temp/mfyuehei-temp.woff) format("woff"),   url(http://hxgdzyuyi.github.io/temp/mfyuehei-temp.ttf) format("truetype");
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Merriweather', 'Helvetica', 'Microsoft YaHei UI', '微软雅黑',sans-serif ;
+
+}
+
+hr {
+    border-color: #F05F40;
+    border-width: 3px;
+    max-width: 50px;
+}
+
+hr .light {
+    border-color: white;
+}
+
+a {
+    transition: all 0.35s;
+    -webkit-transition: all 0.35s; /* safari 和 chorome*/
+    -moz-transition: all 0.35s; /*firefox*/
+    -o-transition: all, 0.35s; /*Opera*/
+    color: #F05F40;
+
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #F05F40;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
