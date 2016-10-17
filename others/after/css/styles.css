@@ -89,6 +89,12 @@ body {
     box-shadow: 0 0 20px black;
 }
 
+.container #home-tiles .col-md-3, .col-md-6, .col-sm-6, .col-sm-12, .col-xs-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 /** activities **/
 
 
@@ -161,6 +167,10 @@ div.panel-footer i:hover {
     height: 675px;
 
   }
+
+    .container #activity-tile .thumbnail .caption{
+        height: 430px;
+    }
 
     /**.container #activity-tile {
         height: 430px;
