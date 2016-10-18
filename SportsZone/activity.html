@@ -19,6 +19,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
+    <link href="css/navbar.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -47,8 +48,14 @@
                     <a class="page-scroll" href="index.html">
                         <i class="fa fa-home visible-xs" ></i>Home</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#page-top">Activities</a>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activities<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">单人PK</a></li>
+                        <li><a href="#">多人竞赛</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">小组活动</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a class="page-scroll" href="community.html">Community</a>
@@ -73,25 +80,163 @@
     </div>  <!--/.container-fluid-->
 </nav>
 
-<header id="activities">
-    <!--主页面的背景图, 图片在css文件中进行设置-->
-    <div class="header-content container-fluid">
-        <h1 id="activityHeading">生命不息，运动不止</h1>
-        <a href="singleActivity.html" class="btn btn-primary btn-xl">加入小组</a>
+<header id="home">
+    <!--主页面的背景图-->
+    <div class="header-content">
+        <div class="header-content-inner">
+
+            <h1 id="activityHeading">生命不息，运动不止</h1>
+        </div>
     </div>
 </header>
 
+<section id="search" class="container">
+    <div class="search-box text-center">
+            <input type="text" class="form-control" placeholder="我想找...">
+            <button class="btn btn-default"><i class="fa fa-search"></i></button>
+    </div>
+
+</section>
+
 <section id="guiding">
     <div class="container">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="active"><a href="#"><h4>单人PK</h4></a></li>
+            <li><a href="#"><h4>多人竞赛</h4></a></li>
+            <li><a href="#"><h4>小组活动</h4></a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="activity-content">
+    <div class="container">
+
+        <!--project-->
         <div class="row">
-            <div class="col-lg-4 col-sm-1 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-child text-primary sr-only"></i>
-                    <p>单人PK</p>
-                </div>
+            <div class="col-md-6 portfolio-box">
+                <a href="singleActivity.html">
+                    <img class="img-responsive img-hover" src="images/project.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="singleActivity.html">Project One</a>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+                </p>
+            </div>
+
+
+            <div class="col-md-6 portfolio-box">
+                <a href="singleActivity.html">
+                    <img class="img-responsive img-hover" src="images/project.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="singleActivity.html">Project One</a>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+                </p>
             </div>
         </div>
+        <!--end two projects-->
+
+        <!--project-->
+        <div class="row">
+            <div class="col-md-6 portfolio">
+                <a href="singleActivity.html">
+                    <img class="img-responsive img-hover" src="images/project.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="singleActivity.html">Project One</a>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+                </p>
+            </div>
+
+
+            <div class="col-md-6 img-portfolio">
+                <a href="singleActivity.html">
+                    <img class="img-responsive img-hover" src="images/project.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="singleActivity.html">Project One</a>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+                </p>
+            </div>
+        </div>
+        <!--end two projects-->
+
+        <!--project-->
+        <div class="row">
+            <div class="col-md-6 img-portfolio">
+                <a href="singleActivity.html">
+                    <img class="img-responsive img-hover" src="images/project.jpg" alt="">
+                </a>
+
+                <h3>
+                    <a href="singleActivity.html">Project One</a>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+                </p>
+            </div>
+
+
+            <div class="col-md-6 img-portfolio">
+                <a href="singleActivity.html">
+                    <img class="img-responsive img-hover" src="images/project.jpg" alt="">
+                </a>
+
+                <h3>
+                    <a href="singleActivity.html">Project One</a>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+                </p>
+            </div>
+        </div>
+        <!--end two projects-->
     </div>
+
+    <!--底部翻页-->
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <ul class="pagination">
+                <li>
+                    <a href="#">&laquo;</a>
+                </li>
+                <li>
+                    <a href="#" class="active">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+                <li>
+                    <a href="#">&raquo;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--翻页结束-->
+
 </section>
 
 

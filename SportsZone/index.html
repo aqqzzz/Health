@@ -19,7 +19,8 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,8 +47,14 @@
                     <li>
                         <a class="page-scroll" href="#page-top">Home</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="activity.html">Activities</a>
+                    <li class="dropdown">
+                        <a href="activity.html" class="dropdown-toggle" data-toggle="dropdown">Activities<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">单人PK</a></li>
+                            <li><a href="#">多人竞赛</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">小组活动</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="page-scroll" href="community.html">Community</a>
