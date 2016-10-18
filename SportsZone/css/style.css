@@ -157,10 +157,21 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url('../images/header.jpg');
     text-align: center;
     color: white;
 }
+
+
+header#home {
+    background-image: url('../images/header.jpg');
+}
+
+header#activities{
+    background-image: url('../images/activity.jpg');
+}
+
+
+
 
 header .header-content {
     position: relative;
