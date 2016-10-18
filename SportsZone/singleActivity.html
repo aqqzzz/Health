@@ -29,7 +29,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top">
+<body id="single-activity">
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -49,7 +49,7 @@
                         <i class="fa fa-home visible-xs" ></i>Home</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activities<span class="caret"></span></a>
+                    <a href="activity.html" class="dropdown-toggle" data-toggle="dropdown">Activities<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#">单人PK</a></li>
                         <li><a href="#">多人竞赛</a></li>
@@ -80,7 +80,7 @@
     </div>  <!--/.container-fluid-->
 </nav>
 
-<header id="single-activity">
+<header>
     <!--主页面的背景图-->
     <div class="header-content">
         <div class="header-content-inner">
@@ -92,11 +92,71 @@
 
 <section id="activity-info">
     <div class="container">
-        <h2>Project</h2>
-        <div class="col-md-9 col-sm-12">
-            <img src="images/single-project.jpg">
+        <h1>活动名称</h1>
+        <ol class="breadcrumb">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="activity.html">活动</a></li>
+            <li class="active">活动类型</li>
+        </ol>
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <img src="images/single-project.jpg" class="img-responsive">
+            </div>
+
+            <div class="col-md-4 activity-info-box">
+                <h2>活动简介</h2>
+                <p>这是活动简介这是活动简介这是活动简介这是活动简介这是活动简介这是活动简介
+                    这是活动简介这是活动简介这是活动简介这是活动简介这是活动简介这是活动简介
+                    这是活动简介这是活动简介这是活动简介这是活动简介这是活动简介这是活动简介</p>
+                <div class="activity-info-nums">
+                    <i class="fa fa-calendar fa-2x"><span>剩余时间：00天23小时</span></i>
+                    <i class="fa fa-trophy fa-2x"><span>奖励：18跑币</span></i>
+                </div>
+
+            </div>
         </div>
+
     </div>
+
+    <hr>
+    <div class="user text-center container-fluid">
+        <h2>参与用户</h2>
+        <div class="row" id="participaters">
+            <div class="col-md-2 col-sm-2 col-xs-3">
+                <a href="user.html"><img src="images/users/1.jpg" class="img-responsive"></a>
+                <p>user1</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-3">
+                <a href="user.html"><img src="images/users/2.jpg" class="img-responsive"></a>
+                <p>user2</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-3">
+                <a href="user.html"><img src="images/users/3.jpg" class="img-responsive"></a>
+                <p>user3</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-3">
+                <a href="user.html"><img src="images/users/4.jpg" class="img-responsive"></a>
+                <p>user4</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-3">
+                <a href="user.html"><img src="images/users/5.jpg" class="img-responsive"></a>
+                <p>user5</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-3">
+                <a href="user.html"><img src="images/users/6.jpg" class="img-responsive"></a>
+                <p>user6</p>
+            </div>
+        </div>
+        <div class="button-panel">
+            <button class="btn btn-default">更多</button>
+        </div>
+
+
+
+    </div>
+
+
 </section>
 
 

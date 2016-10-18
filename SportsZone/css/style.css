@@ -4,7 +4,7 @@ body {
     width: 100%;
 }
 body {
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Merriweather', 'Helvetica Neue','Microsoft YaHei UI','微软雅黑', Arial, sans-serif;
 }
 hr {
     border-color: #F05F40;
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue','Microsoft YaHei UI','微软雅黑', Arial, sans-serif;
 }
 p {
     font-size: 16px;
@@ -127,7 +127,87 @@ section {
 #search .search-box button:hover {
     background-color: #f05f40;
     color: white;
+    top: -10%;
+
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
 }
 /*end of activity.html*/
+
+/*single activity.html*/
+#single-activity #activity-info .activity-info-box{
+    padding-left: 25px;
+}
+
+#single-activity #activity-info .activity-info-nums {
+    margin: 15px 15px 15px 15px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+
+    background-color: lightgrey;
+}
+
+#single-activity #activity-info .activity-info-nums i {
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: #f05f40;
+
+}
+#single-activity #activity-info .activity-info-nums i span {
+    font-size: 16px;
+    padding-left: 10px;
+    font-family: 'Helvetica','Microsoft YaHei UI','FontAwesome',Arial;
+}
+
+#single-activity .user {
+    position: relative;
+    background-color: antiquewhite;
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15px;
+}
+
+#single-activity .user button {
+    position: absolute;
+    border:none;
+    padding-top: 0;
+    text-align: center;
+    clear: both;
+}
+
+#single-activity .user button:hover {
+    background-color: #f05f40;
+    color: white;
+    width: 50px;
+    height: 30px;
+    top: -10%;
+
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+#single-activity .user .button-panel {
+    position: relative;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+
+
 
 
