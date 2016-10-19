@@ -72,13 +72,32 @@ section {
 }
 
 /*activity.html*/
+
+#activity #activity-info .list-group {
+    display: inline;
+
+}
 #guiding h4 {
     font-weight: 500;
     font-family: "Microsoft YaHei UI","微软雅黑",Arial,sans-serif;
 }
 
-#guiding >li.active {
+#guiding .list-group {
+}
+
+#guiding .list-group .active {
+    background-color: #f0ad4e;
+    border-color: #f0ad5e;
+}
+
+#guiding .list-group a:hover {
     background-color: #f05f40;
+    color: whitesmoke;
+    -webkit-transition:  0.35s;
+    -moz-transition:  0.35s;
+    -ms-transition:  0.35s;
+    -o-transition:  0.35s;
+    transition:  0.35s;;
 }
 
 .pagination li a{
@@ -127,7 +146,7 @@ section {
 #search .search-box button:hover {
     background-color: #f05f40;
     color: white;
-    top: -10%;
+    top: -15%;
 
     width: 40px;
     height: 40px;
@@ -172,9 +191,15 @@ section {
     position: relative;
     background-color: antiquewhite;
     padding-top: 15px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: auto;
+    padding-right: auto;
     padding-bottom: 15px;
+}
+
+#single-activity .user .user-content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #single-activity .user button {
@@ -205,9 +230,53 @@ section {
     text-align: center;
 }
 
+#single-activity .user .user-content #participaters {
+    padding-left: 15px;
+    text-align: center;
+    position: relative;
+
+}
+
+#single-activity .user .user-content #participaters  {
+
+    z-index: 1;
+}
+
+
+#single-activity .user .user-content #participaters img:hover {
+
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+
+    -webkit-transition:  0.35s;
+    -moz-transition:   0.35s;
+    -ms-transition:   0.35s;
+    -o-transition:   0.35s;
+    transition:   0.35s;
+}
 
 
 
+@media (min-width: 1200px) {
+    #single-activity .user .user-content{
+        width: 1170px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px){
+    #single-activity .user .user-content{
+        width: 970px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    #single-activity .user .user-content{
+        width: 750px;
+    }
+}
 
 
 
