@@ -31,7 +31,11 @@
         }
     })
 
-    $('')
+    /*$('#guiding').affix({
+        offset: {
+            top: 10
+        }
+    })*/
 
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();

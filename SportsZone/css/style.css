@@ -83,21 +83,38 @@ section {
 }
 
 #guiding .list-group {
+
 }
 
+
 #guiding .list-group .active {
-    background-color: #f0ad4e;
-    border-color: #f0ad5e;
+    background-color: #f05f40;
+    border-color: #f05f40;
 }
 
 #guiding .list-group a:hover {
-    background-color: #f05f40;
+    background-color: #f0ad4e;
     color: whitesmoke;
     -webkit-transition:  0.35s;
     -moz-transition:  0.35s;
     -ms-transition:  0.35s;
     -o-transition:  0.35s;
     transition:  0.35s;;
+}
+
+#guiding .list-group.affix {
+    position: fixed;
+    top: 0;
+}
+
+#guiding .nav li.active a {
+    background-color: #f05f40;
+    color: white
+}
+
+#guiding .nav a:hover {
+    background-color: #f0ad4e;
+    color: antiquewhite;
 }
 
 .pagination li a{
