@@ -19,6 +19,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
+    <link href="css/navbar.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,7 +29,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top">
+<body id="user">
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -46,8 +47,16 @@
                 <li>
                     <a class="page-scroll" href="index.html">Home</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="activity.html">Activities</a>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activities<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">单人PK</a></li>
+                        <li><a href="#">多人竞赛</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">小组活动</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-plus-circle text-center"></i></a></li>
+                    </ul>
                 </li>
                 <li>
                     <a class="page-scroll" href="community.html">Community</a>
@@ -76,13 +85,208 @@
     <!--主页面的背景图-->
     <div class="header-content">
         <div class="header-content-inner">
-            <h1 id="homeHeading">专属于你的运动社区</h1>
-            <hr>
-            <p>和运动发烧友、医生、教练一起开启你的运动之旅</p>
-            <a href="#activities" class="btn btn-primary btn-xl page-scroll">发现</a>
+
         </div>
     </div>
 </header>
+
+<section id="user-content">
+    <div class="container">
+        <div class="header text-center">
+            <div class="user-portrait">
+                <img src="images/users/6.jpg" class="img-circle">
+
+                <p class="user-name">张耳朵</p>
+                <i class="fa fa-venus"></i>
+                <p>一句话介绍一下自己吧</p>
+            </div>
+        </div>
+        <div class="user-navbar">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active"><a href="user.html">我的主页</a></li>
+                        <li><a href="setting.html">我的资料</a></li>
+                        <li><a href="statistic.html">我的运动</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="body">
+            <div class="row interest">
+                <div class="col-md-3">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li><a href="#">关注</a></li>
+                        <li><a href="#">粉丝</a></li>
+                        <li><a href="#">动态</a></li>
+                    </ul>
+
+                    <div class="user-information">
+                        <div class="list-group">
+                            <p class="list-group-item"><i class="fa fa-certificate"></i>等级：10级</p>
+                            <p class="list-group-item"><i class="fa fa-map-marker"></i>地点：江苏 南京</p>
+                            <p class="list-group-item"><i class="fa fa-file-text-o"></i>简介：爱跳舞的程序猿</p>
+                            <p class="list-group-item"><i class="fa fa-universal-access"></i>兴趣：跑步 瑜伽</p>
+                            <p class="list-group-item text-center">查看更多</p>
+                        </div>
+                    </div>
+
+                    <div class="edit-message text-center">
+                        <a href="#"><i class="fa fa-pencil-square-o fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-9" id="user-message-box">
+                    <div class="message-item">
+                        <div class="message-header">
+                            <img src="images/users/6.jpg" class="img-circle">
+                            <p class="user-name">张耳朵<br>10月19日 20:11</p>
+                        </div>
+                        <div class="message-content">
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                        </div>
+                        <div class="message-comment">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>点赞</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i>评论</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="message-header">
+                            <img src="images/users/6.jpg" class="img-circle">
+                            <p class="user-name">张耳朵<br>10月19日 20:11</p>
+                        </div>
+                        <div class="message-content">
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                        </div>
+                        <div class="message-comment">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>点赞</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i>评论</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="message-header">
+                            <img src="images/users/6.jpg" class="img-circle">
+                            <p class="user-name">张耳朵<br>10月19日 20:11</p>
+                        </div>
+                        <div class="message-content">
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                        </div>
+                        <div class="message-comment">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>点赞</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i>评论</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="message-header">
+                            <img src="images/users/6.jpg" class="img-circle">
+                            <p class="user-name">张耳朵<br>10月19日 20:11</p>
+                        </div>
+                        <div class="message-content">
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                        </div>
+                        <div class="message-comment">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>点赞</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i>评论</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="message-header">
+                            <img src="images/users/6.jpg" class="img-circle">
+                            <p class="user-name">张耳朵<br>10月19日 20:11</p>
+                        </div>
+                        <div class="message-content">
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                        </div>
+                        <div class="message-comment">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>点赞</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i>评论</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="message-header">
+                            <img src="images/users/6.jpg" class="img-circle">
+                            <p class="user-name">张耳朵<br>10月19日 20:11</p>
+                        </div>
+                        <div class="message-content">
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                        </div>
+                        <div class="message-comment">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>点赞</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i>评论</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="message-header">
+                            <img src="images/users/6.jpg" class="img-circle">
+                            <p class="user-name">张耳朵<br>10月19日 20:11</p>
+                        </div>
+                        <div class="message-content">
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                        </div>
+                        <div class="message-comment">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>点赞</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i>评论</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="message-header">
+                            <img src="images/users/6.jpg" class="img-circle">
+                            <p class="user-name">张耳朵<br>10月19日 20:11</p>
+                        </div>
+                        <div class="message-content">
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                            这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容这是动态内容
+                        </div>
+                        <div class="message-comment">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>点赞</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i>评论</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
 
 
 

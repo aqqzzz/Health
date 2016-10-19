@@ -176,9 +176,29 @@ section {
 /*end of activity.html*/
 
 /*single activity.html*/
+#single-activity #activity-info .container {
+    position: relative;
+}
+
 #single-activity #activity-info .activity-info-box{
     padding-left: 25px;
 }
+
+
+
+#single-activity #activity-info button {
+    position: absolute;
+    color: #f05f40;
+    top:15px;
+    right:15px;
+}
+
+#single-activity #activity-info button:hover {
+    background-color: #f05f40;
+    color:white;
+}
+
+
 
 #single-activity #activity-info .activity-info-nums {
     margin: 15px 15px 15px 15px;
@@ -219,33 +239,8 @@ section {
     margin-right: auto;
 }
 
-#single-activity .user button {
-    position: absolute;
-    border:none;
-    padding-top: 0;
-    text-align: center;
-    clear: both;
-}
 
-#single-activity .user button:hover {
-    background-color: #f05f40;
-    color: white;
-    width: 50px;
-    height: 30px;
-    top: -10%;
 
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    -ms-transition: all 0.35s;
-    -o-transition: all 0.35s;
-    transition: all 0.35s;
-}
-
-#single-activity .user .button-panel {
-    position: relative;
-    height: 30px;
-    text-align: center;
-}
 
 #single-activity .user .user-content #participaters {
     padding-left: 15px;
@@ -273,6 +268,128 @@ section {
     -ms-transition:   0.35s;
     -o-transition:   0.35s;
     transition:   0.35s;
+}
+
+/* end of singgle activity */
+
+/* user html */
+
+#user a {
+    color:black;
+}
+
+#user header {
+    background-image: url('../images/header-tem.jpg');
+}
+
+#user {
+    background-image: url('../images/background/background-user.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#user #user-content .header {
+    background-image: url('../images/background/user-back.jpg');
+    height: 300px;
+
+    position: relative;
+}
+
+#user #user-content .header .user-portrait {
+    padding-top: 40px;
+    color: white;
+}
+
+#user #user-content .header .user-portrait img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#user #user-content .header .user-portrait p {
+    font-size: 15px;
+}
+
+#user #user-content .header .user-portrait .user-name {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+    display: inline;
+}
+
+#user #user-content .body .interest{
+    margin-top: 15px;
+}
+
+#user #user-content .body .interest ul li a {
+    background-color: white;
+}
+
+#user #user-content .body .interest ul li a:hover {
+    border-bottom-color: #eb3812;
+    color: #f05f40;
+}
+
+#user #user-content .body .interest .user-information {
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+
+}
+
+#user #user-content .body .interest .edit-message a{
+    color: grey;
+}
+
+#user #user-content .body .interest .edit-message.affix a{
+    top: 100px;
+    text-align: center;
+}
+
+#user #user-content .body .interest .edit-message a:hover{
+    color: #f05f40;
+}
+
+#user #user-content .body .interest .user-information p{
+    font-size: 14px;
+    color: grey;
+}
+
+
+
+#user #user-content .body #user-message-box .message-item {
+    padding-top: 20px;
+    padding-left: 20px;
+
+    background-color: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+#user #user-message-box .message-header img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#user #user-message-box .message-header p {
+    display: inline;
+    font-size: 14px;
+
+}
+
+#user #user-message-box .message-content {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
 }
 
 
