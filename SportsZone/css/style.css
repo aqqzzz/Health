@@ -524,6 +524,60 @@ section {
     display: inline;
 }
 
+/*end of statistics*/
+/* following */
+#user #following-box{
+    background-color: white;
+
+
+}
+#user #following-box .following-user {
+    background-color: beige;
+    border-radius: 5px;
+    margin: 20px 30px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#user #following-box .following-user .image {
+    float: left;
+    width: 30%;
+}
+
+#user #following-box .following-user .description {
+    margin-left: 30%;
+    width: 70%;
+    padding-left: 20px;
+}
+
+#user #content .body .interest ul li a.active{
+    font-weight: bold;
+    color: black;
+    border-bottom-color: #f05f40;
+}
+
+
+#user #following-box .following-user .description .user-name {
+    font-weight:bold;
+}
+
+#user #following-box .following-user img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+
+    z-index: 2;
+}
+
+
 @media (min-width: 1200px) {
     #single-activity .user .user-content {
         width: 1170px;
@@ -565,7 +619,7 @@ section {
         margin-left: 0px;
     }
 
-    #user #content .body #user-message-box {
+    #user #content .body #user-message-box, #user #following-box {
         margin-left: 8.3333333%;
     }
 
@@ -580,6 +634,15 @@ section {
     #statistics #content #statistic-box mark {
         font-size: 25px;
     }
+
+    #user #following-box .following-user{
+        margin: 15px 20px;
+        padding: 10px 10px;
+    }
+
+    #user #following-box .following-user p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 767px){
@@ -588,7 +651,7 @@ section {
         margin-left: 0px;
     }
 
-    #user #content .body #user-message-box {
+    #user #content .body #user-message-box, #user #following-box {
         margin-left: 8.3333333%;
     }
 
@@ -609,6 +672,17 @@ section {
         margin-left: 0px;
         margin-right: 0px;
 
+    }
+
+
+
+    #user #following-box .following-user img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    #user #following-box .following-user p {
+        font-size: 14px;
     }
 
 }
