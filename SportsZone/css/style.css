@@ -274,15 +274,13 @@ section {
 
 /* user html */
 
-#user a {
-    color:black;
-}
+
 
 #user header {
     background-image: url('../images/header-tem.jpg');
 }
 
-#user {
+#user, #statistics {
     background-image: url('../images/background/background-user.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -290,79 +288,56 @@ section {
     background-position: center center;
 }
 
-#user #user-content .header {
-    background-image: url('../images/background/user-back.jpg');
-    height: 300px;
 
-    position: relative;
+#user body a {
+    color:black;
 }
 
-#user #user-content .header .user-portrait {
-    padding-top: 40px;
-    color: white;
-}
-
-#user #user-content .header .user-portrait img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
-}
-
-#user #user-content .header .user-portrait p {
-    font-size: 15px;
-}
-
-#user #user-content .header .user-portrait .user-name {
-    font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 2px black;
-    display: inline;
-}
-
-#user #user-content .body .interest{
+#user #content .body .interest{
     margin-top: 15px;
 }
 
-#user #user-content .body .interest ul li a {
+#user #content .body .interest ul li a {
     background-color: white;
 }
 
-#user #user-content .body .interest ul li a:hover {
+#user #content .body .interest ul li a:hover {
     border-bottom-color: #eb3812;
     color: #f05f40;
 }
 
-#user #user-content .body .interest .user-information {
+#user #content .body .interest .user-information {
     margin-top: 30px;
     width: 100%;
     background-color: white;
 
 }
 
-#user #user-content .body .interest .edit-message a{
+#user #content .body .interest .edit-message a{
     color: grey;
+
 }
 
-#user #user-content .body .interest .edit-message.affix a{
+#user #content .body .interest .edit-message.affix {
     top: 100px;
-    text-align: center;
+    position: fixed;
 }
 
-#user #user-content .body .interest .edit-message a:hover{
+
+
+
+#user #content .body .interest .edit-message a:hover{
     color: #f05f40;
 }
 
-#user #user-content .body .interest .user-information p{
+#user #content .body .interest .user-information p{
     font-size: 14px;
     color: grey;
 }
 
 
 
-#user #user-content .body #user-message-box .message-item {
+#user #content .body #user-message-box .message-item {
     padding-top: 20px;
     padding-left: 20px;
 
@@ -392,24 +367,250 @@ section {
     margin-bottom: 10px;
 }
 
+#user #user-message-box .message-favor {
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #eb3812;
+}
 
+#user #user-message-box .message-favor img{
+    width: 40px;
+    height: 40px;
+}
+
+/*common sets of user and statistic*/
+
+#content .header {
+    background-image: url('../images/background/user-back.jpg');
+    height: 300px;
+
+    position: relative;
+    width: 100%;
+
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    background-size: auto;
+    -o-background-size: auto;
+    /*992~1200时，这个背景图的宽度应该为940
+        768~991时，这个背景图的宽度应该为720*/
+
+}
+
+#content .header .user-portrait {
+    padding-top: 40px;
+    color: white;
+}
+
+#content .header .user-portrait img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#content .header .user-portrait p {
+    font-size: 15px;
+}
+
+#content .header .user-portrait .user-name {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+    display: inline;
+}
+
+/*end of common sets of user and statistic*/
+
+/*user html end*/
+
+/*statistic html*/
+#statistics #content .body {
+    margin-top: 20px;
+}
+
+#statistics #content .sports-sidebar.affix {
+    top: 100px;
+    margin-left: 80px;
+}
+
+#statistics #content .body #statistic-box{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+}
+
+#statistics #content #statistic-box div {
+    margin-bottom: 20px;
+}
+
+#statistics #content #statistic-box hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#statistics #content #statistic-box .sports-overview i{
+
+    margin-right: 10px;
+
+    color: darkred;
+
+}
+
+#statistics #content #statistic-box span{
+    font-family:"Microsoft YaHei UI","微软雅黑","Arial",sans-serif;
+    font-size: 20px;
+
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+#statistics #content #statistic-box mark {
+    font-size: 30px;
+    color: darkred;
+}
+
+#statistics #content #statistic-box button {
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+#statistics #content #statistic-box .sports-total .sports-total-courage span {
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 20%;
+    height: 0;
+
+    padding-top: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-color: #f0ad4e;
+    color: white;
+}
+
+#statistics #content #statistic-box .sports-total .sports-total-courage span:nth-child(2){
+    background-color: #67b168;
+}
+
+#statistics #content #statistic-box .sports-total .sports-total-courage span mark {
+    background-color: transparent;
+    color: white;
+}
+
+#statistics #statistic-box #body-manage span {
+    font-size: 15px;
+}
+
+#statistics #statistic-box #body-manage mark {
+    font-size: 20px;
+}
+
+#statistics #statistic-box #body-manage .bd-example .modal-body span {
+    display: inline-block;
+
+    width: 40%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#statistics #statistic-box #body-manage .bd-example input {
+    width: 40%;
+    display: inline;
+}
 
 @media (min-width: 1200px) {
-    #single-activity .user .user-content{
+    #single-activity .user .user-content {
         width: 1170px;
     }
-}
 
-@media (max-width: 1199px) and (min-width: 992px){
-    #single-activity .user .user-content{
+    #user #content .body .interest .edit-message.affix {
+        margin-left: 150px;
+    }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    #single-activity .user .user-content {
         width: 970px;
     }
+
+    #user #content .body .interest .edit-message.affix {
+        margin-left: 130px;
+    }
+
+    #statistics #content #statistic-box span{
+
+        font-size: 18px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #statistics #content #statistic-box mark {
+        font-size: 25px;
+    }
+
 }
 
-@media (max-width: 991px) and (min-width: 768px){
-    #single-activity .user .user-content{
+@media (max-width: 991px) and (min-width: 768px) {
+    #single-activity .user .user-content {
         width: 750px;
     }
+
+    #user #content .body .interest .edit-message.affix {
+        margin-left: 0px;
+    }
+
+    #user #content .body #user-message-box {
+        margin-left: 8.3333333%;
+    }
+
+    #statistics #content #statistic-box span{
+
+        font-size: 18px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #statistics #content #statistic-box mark {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767px){
+    /*当页面最小时，要将*/
+    #user #content .body .interest .edit-message.affix {
+        margin-left: 0px;
+    }
+
+    #user #content .body #user-message-box {
+        margin-left: 8.3333333%;
+    }
+
+    #statistics #content #statistic-box span{
+
+        font-size: 18px;
+
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #statistics #content #statistic-box mark {
+        font-size: 25px;
+    }
+
+    #statistics #content #statistic-box .sports-total .sports-total-courage span {
+
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
 }
 
 

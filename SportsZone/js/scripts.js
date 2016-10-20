@@ -1,6 +1,9 @@
 /**
  * Created by st0001 on 2016/10/17 0017.
  */
+
+
+
 (function($) {
     "use strict"; // Start of use strict
 
@@ -31,17 +34,17 @@
         }
     })
 
-    /*$('#guiding').affix({
+    $('.sports-sidebar').affix({
         offset: {
-            top: 10
-        }
-    })*/
-
-    $('.edit-message').affix({
-        offset: {
-            top:880
+            top: 580
         }
     })
+
+    /*$('.edit-message').affix({
+        offset: {
+            top:100
+        }
+    })*/
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
@@ -77,6 +80,8 @@
 
 })(jQuery); // End of use strict
 
+
+
 /**
  * 鼠标划过就展开子菜单，免得需要点击才能展开
  */
@@ -95,5 +100,121 @@ $(document).ready(function () {
     $(document).off('click.bs.dropdown.data-api');
     dropdownOpen();
 })
+
+$(function () {
+    $('.time-charts').highcharts({
+        title: {
+            text: '本周运动距离',
+            x: -20 //center
+        },
+        subtitle: {
+            text: '来自：追踪器',
+            x: -20
+        },
+        xAxis: {
+            categories: ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六',
+                '星期天']
+        },
+        yAxis: {
+            title: {
+                text: '跑步距离(km)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: 'km'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name:'跑步距离',
+            data: [7.0, 6.9, 9.5, 10.5, 3.2, 2.5, 0]
+        }]
+    });
+});
+
+$(function () {
+    $('.calorie-charts').highcharts({
+        chart: {
+            type:'area'
+        },
+        title: {
+            text: '本周运动燃烧热量',
+            x: -20 //center
+        },
+        subtitle: {
+            text: '来自：追踪器',
+            x: -20
+        },
+        xAxis: {
+            categories: ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六',
+                '星期天']
+        },
+        yAxis: {
+            title: {
+                text: '燃烧热量(cal)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: 'cal'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name:'卡路里',
+            data: [453, 655, 690, 755, 453 , 433, 366]
+        }]
+    });
+});
+
+$(function () {
+    $('.body-charts').highcharts({
+        title: {
+            text: 'BMI变化表',
+            x: -20 //center
+        },
+        xAxis: {
+            categories: ['2016/10/01', '2016/10/08', '2016/10/15', '2016/10/21']
+        },
+        yAxis: {
+            title: {
+                text: 'BMI'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name:'BMI',
+            data: [18.4, 18.7, 19.1, 19.1]
+        }]
+    });
+});
+
 
 
