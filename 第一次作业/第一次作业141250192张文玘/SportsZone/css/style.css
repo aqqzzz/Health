@@ -1,0 +1,827 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'Merriweather', 'Helvetica Neue','Microsoft YaHei UI','微软雅黑', Arial, sans-serif;
+}
+hr {
+    border-color: #F05F40;
+    border-width: 3px;
+    max-width: 50px;
+}
+hr.light {
+    border-color: white;
+}
+a {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    color: #F05F40;
+}
+a:hover,
+a:focus {
+    color: #eb3812;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue','Microsoft YaHei UI','微软雅黑', Arial, sans-serif;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: url('../images/header-tem.jpg');
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+header .header-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 15px 100px;
+    width: 100%;
+}
+
+header .header-content .header-content-inner h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+section {
+    padding: 25px 0;
+}
+
+/*activity.html*/
+
+#activity #activity-info .list-group {
+    display: inline;
+
+}
+#guiding h4 {
+    font-weight: 500;
+    font-family: "Microsoft YaHei UI","微软雅黑",Arial,sans-serif;
+}
+
+#guiding .list-group {
+
+}
+
+
+#guiding .list-group .active {
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+#guiding .list-group a:hover {
+    background-color: #f0ad4e;
+    color: whitesmoke;
+    -webkit-transition:  0.35s;
+    -moz-transition:  0.35s;
+    -ms-transition:  0.35s;
+    -o-transition:  0.35s;
+    transition:  0.35s;;
+}
+
+#guiding .list-group.affix {
+    position: fixed;
+    top: 0;
+}
+
+#guiding .nav li.active a {
+    background-color: #f05f40;
+    color: white
+}
+
+#guiding .nav a:hover {
+    background-color: #f0ad4e;
+    color: antiquewhite;
+}
+
+.pagination li a{
+    color: #F05F40;
+}
+
+.pagination li a:hover {
+    color: black;
+}
+
+.pagination >li> a.active {
+    background-color: #f05f40;
+    color: white;
+}
+#search {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#search .search-box {
+    position: relative;
+}
+
+
+#search .search-box .form-control {
+    display: inline;
+    width: 90%;
+}
+
+#search .search-box .form-control:focus {
+    border-color: #f05f40;
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 99, 71, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 99, 71, .6);
+}
+
+#search .search-box button {
+    border: none;
+    color: #f05f40;
+    position: absolute;
+    z-index: 5;
+}
+
+#search .search-box button:hover {
+    background-color: #f05f40;
+    color: white;
+    top: -15%;
+
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+/*end of activity.html*/
+
+/*single activity.html*/
+#single-activity #activity-info .container {
+    position: relative;
+}
+
+#single-activity #activity-info .activity-info-box{
+    padding-left: 25px;
+}
+
+
+
+#single-activity #activity-info button {
+    position: absolute;
+    color: #f05f40;
+    top:15px;
+    right:15px;
+}
+
+#single-activity #activity-info button:hover {
+    background-color: #f05f40;
+    color:white;
+}
+
+
+
+#single-activity #activity-info .activity-info-nums {
+    margin: 15px 15px 15px 15px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+
+    background-color: lightgrey;
+}
+
+#single-activity #activity-info .activity-info-nums i {
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: #f05f40;
+
+}
+#single-activity #activity-info .activity-info-nums i span {
+    font-size: 16px;
+    padding-left: 10px;
+    font-family: 'Helvetica','Microsoft YaHei UI','FontAwesome',Arial;
+}
+
+#single-activity .user {
+    position: relative;
+    background-color: antiquewhite;
+    padding-top: 15px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 15px;
+}
+
+#single-activity .user .user-content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+#single-activity .user .user-content #participaters {
+    padding-left: 15px;
+    text-align: center;
+    position: relative;
+
+}
+
+#single-activity .user .user-content #participaters  {
+
+    z-index: 1;
+}
+
+
+#single-activity .user .user-content #participaters img:hover {
+
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+
+    -webkit-transition:  0.35s;
+    -moz-transition:   0.35s;
+    -ms-transition:   0.35s;
+    -o-transition:   0.35s;
+    transition:   0.35s;
+}
+
+/* end of singgle activity */
+
+/* user html */
+
+
+
+#user header {
+    background-image: url('../images/header-tem.jpg');
+}
+
+#user, #statistics {
+    background-image: url('../images/background/background-user.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+#user body a {
+    color:black;
+}
+
+#user #content .body .interest{
+    margin-top: 15px;
+}
+
+#user #content .body .interest ul li a {
+    background-color: white;
+}
+
+#user #content .body .interest ul li a:hover {
+    border-bottom-color: #eb3812;
+    color: #f05f40;
+}
+
+#user #content .body .interest .user-information {
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+
+}
+
+#user #content .body .interest .edit-message a{
+    color: grey;
+
+}
+
+#user #content .body .interest .edit-message.affix {
+    top: 100px;
+    position: fixed;
+}
+
+
+
+
+#user #content .body .interest .edit-message a:hover{
+    color: #f05f40;
+}
+
+#user #content .body .interest .user-information p{
+    font-size: 14px;
+    color: grey;
+}
+
+
+/*user and community using */
+.user-message-box .message-item {
+    padding-top: 20px;
+    padding-left: 20px;
+
+    background-color: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+.user-message-box .message-header img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.user-message-box .message-header p {
+    display: inline;
+    font-size: 14px;
+
+}
+
+.user-message-box .message-content {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.user-message-box .message-favor {
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #eb3812;
+}
+
+.user-message-box .message-favor img{
+    width: 40px;
+    height: 40px;
+}
+
+/*common sets of user and statistic*/
+
+#content .header {
+    background-image: url('../images/background/user-back.jpg');
+    height: 300px;
+
+    position: relative;
+    width: 100%;
+
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    background-size: auto;
+    -o-background-size: auto;
+    /*992~1200时，这个背景图的宽度应该为940
+        768~991时，这个背景图的宽度应该为720*/
+
+}
+
+#content .header .user-portrait {
+    padding-top: 40px;
+    color: white;
+}
+
+#content .header .user-portrait img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#content .header .user-portrait p {
+    font-size: 15px;
+}
+
+#content .header .user-portrait .user-name {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+    display: inline;
+}
+
+/*end of common sets of user and statistic*/
+
+/*user html end*/
+
+/*statistic html*/
+#statistics #content .body {
+    margin-top: 20px;
+}
+
+#statistics #content .sports-sidebar.affix {
+    top: 100px;
+    margin-left: 80px;
+}
+
+#statistics #content .body #statistic-box{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+}
+
+#statistics #content #statistic-box div {
+    margin-bottom: 20px;
+}
+
+#statistics #content #statistic-box hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#statistics #content #statistic-box .sports-overview i{
+
+    margin-right: 10px;
+
+    color: darkred;
+
+}
+
+#statistics #content #statistic-box span{
+    font-family:"Microsoft YaHei UI","微软雅黑","Arial",sans-serif;
+    font-size: 20px;
+
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+#statistics #content #statistic-box mark {
+    font-size: 30px;
+    color: darkred;
+}
+
+#statistics #content #statistic-box button {
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+#statistics #content #statistic-box .sports-total .sports-total-courage span {
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 20%;
+    height: 0;
+
+    padding-top: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-color: #f0ad4e;
+    color: white;
+}
+
+#statistics #content #statistic-box .sports-total .sports-total-courage span:nth-child(2){
+    background-color: #67b168;
+}
+
+#statistics #content #statistic-box .sports-total .sports-total-courage span mark {
+    background-color: transparent;
+    color: white;
+}
+
+#statistics #statistic-box #body-manage span {
+    font-size: 15px;
+}
+
+#statistics #statistic-box #body-manage mark {
+    font-size: 20px;
+}
+
+#statistics #statistic-box #body-manage .bd-example .modal-body span {
+    display: inline-block;
+
+    width: 40%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#statistics #statistic-box #body-manage .bd-example input {
+    width: 40%;
+    display: inline;
+}
+
+/*end of statistics*/
+/* following */
+#user #following-box, #user #my-activity-box{
+    background-color: white;
+
+
+}
+#user #following-box .following-user, #user #my-activity-box .activity-item {
+    background-color: beige;
+    border-radius: 5px;
+    margin: 20px 30px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#user #following-box .following-user .image, #user #my-activity-box .activity-item image {
+    float: left;
+    width: 30%;
+}
+
+#user #following-box .following-user .description{
+    margin-left: 30%;
+    width: 70%;
+    padding-left: 20px;
+}
+
+#user #content .body .interest ul li a.active{
+    font-weight: bold;
+    color: black;
+    border-bottom-color: #f05f40;
+}
+
+
+#user #following-box .following-user .description .user-name {
+    font-weight:bold;
+}
+
+#user #following-box .following-user img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+
+    z-index: 2;
+}
+
+/*end of followings and followers*/
+/* start of community */
+#community{
+    background-image: url('../images/background/background-user.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#community #content .body .card-block .nav a{
+    color: black;
+    padding: 0 15px;
+    border: 0;
+ }
+
+#community #content .body .card-block .nav a:hover{
+    color: #f05f40;
+    background-color: white;
+}
+
+#community #content .body .user .card {
+    border: 1px solid ghostwhite;
+    background-color: white;
+}
+
+#community #content .body .user-information {
+    padding: 10px;
+}
+
+#community #content .body .user-information .card-title{
+    text-align: center;
+}
+
+#community #content .body .user-information .card-block .nav .list-group {
+    margin-bottom: 0;
+}
+
+#community #content .body .user-information .card-block .nav li:hover {
+    border-bottom: 1px solid ;
+}
+
+#community #content .body .user-information .card-block .nav li:hover {
+    border-bottom-color: #eb3812;
+}
+
+#community #content .body .credit-message {
+    background-color: white;
+    width:100%;
+    margin-bottom: 20px;
+
+    padding-bottom: 5%;
+}
+
+#community #content .body .credit-message p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#community #content .body .credit-message textarea {
+    width: 100%;
+}
+
+#community #content .body .credit-message button {
+    float: right;
+    background-color: white;
+    color: #f05f40;
+
+}
+
+#community #content .body .credit-message button:hover {
+
+    background-color: #f05f40;
+    color: white;
+
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;;
+}
+
+#create-activity-info {
+    background-color: white;
+    padding-bottom: 2%;
+}
+
+#create-activity-info .form-control {
+    width: auto;
+    display: inline-block;
+}
+
+#create-activity-info #ac-simple-des {
+    float: left;
+}
+
+#create-activity-info textarea {
+     width: 90%;
+ }
+
+#create-activity-info button {
+    float: right;
+    background-color: white;
+    color: #f05f40;
+
+}
+
+#create-activity-info button:hover{
+
+    background-color: #f05f40;
+    color: white;
+
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+#user .body .row, #community #content .row {
+    overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+    #single-activity .user .user-content {
+        width: 1170px;
+    }
+
+    #user #content .body .interest .edit-message.affix {
+        margin-left: 150px;
+    }
+
+    #community #content .body .card.affix {
+        top: 50px;
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    #community #content .body .card.affix .user-information p, .card.affix .user-information a {
+        font-size: 14px;
+    }
+
+    #community #content .body .card.affix .user-information h4 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    #single-activity .user .user-content {
+        width: 970px;
+    }
+
+    #user #content .body .interest .edit-message.affix {
+        margin-left: 130px;
+    }
+
+    #statistics #content #statistic-box span{
+
+        font-size: 18px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #statistics #content #statistic-box mark {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #single-activity .user .user-content {
+        width: 750px;
+    }
+
+    #user #content .body .interest .edit-message.affix {
+        margin-left: 0px;
+    }
+
+    #user #content .body .user-message-box, #user #following-box {
+        margin-left: 8.3333333%;
+    }
+
+    #statistics #content #statistic-box span{
+
+        font-size: 18px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #statistics #content #statistic-box mark {
+        font-size: 25px;
+    }
+
+    #user #following-box .following-user{
+        margin: 15px 20px;
+        padding: 10px 10px;
+    }
+
+    #user #following-box .following-user p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px){
+    /*当页面最小时，要将*/
+    #user #content .body .interest .edit-message.affix {
+        margin-left: 0px;
+    }
+
+    #user #content .body .user-message-box, #user #following-box {
+        margin-left: 8.3333333%;
+    }
+
+    #statistics #content #statistic-box span{
+
+        font-size: 18px;
+
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #statistics #content #statistic-box mark {
+        font-size: 25px;
+    }
+
+    #statistics #content #statistic-box .sports-total .sports-total-courage span {
+
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+
+
+    #user #following-box .following-user img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    #user #following-box .following-user p {
+        font-size: 14px;
+    }
+}
+
+
+

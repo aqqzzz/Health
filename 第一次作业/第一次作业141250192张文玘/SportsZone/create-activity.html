@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sports Zone</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="community" data-spy="scroll" data-target="sidebarMenu">
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-nav">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Sport Zone 运动空间</a>
+        </div>
+
+        <!--到其他页面的导航按钮-->
+        <div class="collapse navbar-collapse" id="header-nav">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="activity.html" class="dropdown-toggle" data-toggle="dropdown">Activities<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">单人PK</a></li>
+                        <li><a href="#">多人竞赛</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">小组活动</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-plus-circle text-center"></i></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="page-scroll" href="community.html">Community</a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="statistic.html">Statistic</a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="user.html">User</a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="#contact">Contact us</a>
+                </li>
+
+
+
+            </ul>
+        </div><!-- /.navbar-collapse-->
+    </div>  <!--/.container-fluid-->
+</nav>
+
+<header>
+    <!--主页面的背景图-->
+    <div class="header-content">
+        <div class="header-content-inner">
+
+        </div>
+    </div>
+</header>
+
+<section id="content">
+    <div class="container">
+
+        <div class="body">
+            <div class="row">
+                <div class="user">
+                    <div class="col-md-3 col-sm-3 nav">
+                        <div class="card">
+                            <img class="card-img-top img-responsive" src="images/users/6.jpg" alt="Card image cap">
+                            <div class="card-block user-information">
+                                <h4 class="card-title">张耳朵</h4>
+                                <p class="card-text">不爱跳舞的迷妹不是好程序猿</p>
+                            </div>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="user.html">我的动态</a></li>
+                                <li class="list-group-item"><a href="statistic.html">我的运动</a></li>
+                                <li class="list-group-item"><a href="my-activities.html">我的活动</a></li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-9 col-sm-9 col-xs-10" id="create-activity-info">
+                    <h1>创建活动</h1>
+                    <p><label>活动名称：</label><input type="text"></p>
+
+                    <p><label>活动类型：</label>
+                        <select class="form-control">
+                            <option>单人PK</option>
+                            <option>多人竞赛</option>
+                            <option>小组活动</option>
+                        </select></p>
+                    <p><label>活动奖励：</label><input type="text">跑币</p>
+                    <p><label id="ac-simple-des">活动简介：</label><textarea rows="5"></textarea>
+                    </p>
+                    <button class="btn btn-default">发布</button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
