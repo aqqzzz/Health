@@ -1,0 +1,63 @@
+/*
+ * 2015-10-31
+ * Created by cylong
+ */
+
+div.content {
+	float: right;
+	background-color: #FFF;
+	width: 80%;
+	height: auto;
+	padding: 20px 20px;
+	margin: 0 20px 20px;
+}
+
+.content .title {
+	background-color: #F3726D;
+	float: left;
+	border-radius: 50%;
+	text-align: center;
+	color: #EEE;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+}
+
+.content .info {
+	line-height: 33px;
+	height: 100px;
+}
+
+.content span {
+	color: #F3726D;
+}
+
+.content .descript {
+	margin-top: 10px;
+}
+
+.input-group {
+	width: 70%;
+	margin: 20px auto;
+}
+
+/* 发布活动表格 */
+.add_activity {
+	width: 100%;
+}
+
+.add_activity td {
+    padding: 20px;
+}
+
+.add_activity .first_col {
+	text-align: right;
+	width: 20%;
+	padding: 20px;
+}
+
+.add_activity textarea {
+    width: 90%;
+	min-height: 200px;
+}

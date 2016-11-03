@@ -1,0 +1,185 @@
+<!-- 作者：陈云龙 -->
+<!-- 时间：2015-10-31 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>喵喵运动社区</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-modify.css" rel="stylesheet">
+	<link href="css/user.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/my.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.php">喵喵运动社区</a>
+	</div>
+	<div class="nav-center">
+		<ul class="nav navbar-nav">
+			<li><a href="index.php">首页 </i></a></li>
+			<li><a href="race.php">竞赛 </a></li>
+			<li><a href="activity.php">活动 </a></li>
+			<li><a href="interest.php">兴趣组 </a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="user.php"><img class="avatar" src="<{$avatar}>"> <{$name}></a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container box">
+	<ul class="nav nav-tabs nav-stacked sidebar">
+		<li role="presentation" class="active"><a href="#profile" data-toggle="tab">个人资料</a></li>
+		<li role="presentation"><a href="#moments" data-toggle="tab">我的动态</a></li>
+		<li role="presentation"><a href="#friends" data-toggle="tab">我的好友</a></li>
+		<li role="presentation"><a href="#account" data-toggle="tab">我的账户</a></li>
+		<li role="presentation"><a href="#notify" data-toggle="tab">消息盒子</a></li>
+		<li role="presentation"><a href="login.php" >返回登录</a></li>
+	</ul>
+	<div id="avatar">
+		<img src="<{$avatar}>">
+		<br><br>
+		<a href="user.php"><{$name}></a>
+	</div>
+	<div class="tab-content">
+		<div id="hint" class="success">保存成功</div>
+		<!-- 我的动态 -->
+		<div class="tab-pane fade" id="moments">
+			<{foreach from = $my_moments key = num item = "moments"}>
+				<div id = "moments_<{$moments['mid']}>" class="content">
+					<input class="button pink" type="submit" onclick="delete_moment('<{$moments['mid']}>', 'moments_<{$moments['mid']}>', 'delete_moment.php')" value="删除" />
+					<img class="item-avatar" src="<{$avatar}>"><span class="item-name"><{$name}></span>
+					<span class="item-date"><{$moments['mdate']}></span>
+					<div class="item-content"><{$moments['content']}></div>
+				</div>
+			<{/foreach}>
+		</div>
+		<!-- 个人资料 -->
+		<div class="tab-pane fade in active" id="profile">
+			<div class="content">
+				<form class="" action="profile_upd.php" method="post">
+					<table class="profile_list">
+						<tr>
+			   				<td class="first_col">昵称</td>
+			   				<td><input id="name" name="name" type="text" value="<{$name}>"/><span id="name_error" class="error">不可以为空</span></td>
+						</tr>
+						<tr>
+				   			<td class="first_col">性别</td>
+				   			<td>
+								<input id="gender_0" name="gender" type="radio" value="0">&nbsp;男</input> &nbsp;
+								<input id="gender_1" name="gender" type="radio" value="1">&nbsp;女</input>
+							</td>
+						</tr>
+						<tr>
+				   			<td class="first_col">本周目标</td>
+				   			<td><input id="goal" name="goal" type="text" value="<{$goal}>"/>&nbsp;公里<span id="goal_error" class="error"></span></td>
+						</tr>
+						<tr>
+				   			<td class="first_col">身份</td>
+				   			<td>
+								<input id="iden_1" name="identity" type="radio" value="1" disabled="true">&nbsp;普通用户</input> &nbsp;
+								<input id="iden_2" name="identity" type="radio" value="2" disabled="true">&nbsp;医生</input> &nbsp;
+								<input id="iden_3" name="identity" type="radio" value="3" disabled="true">&nbsp;教练</input>
+							</td>
+						</tr>
+						<tr>
+				   			<td class="first_col">监督医生</td>
+				   			<td><input type="text" name="doctor" value="<{$doc_name}>"/> <span>昵称</span></td>
+						</tr>
+						<tr>
+				   			<td class="first_col">贴身教练</td>
+				   			<td><input type="text" name="coach" value="<{$coa_name}>"/> <span>昵称</span></td>
+						</tr>
+						<tr>
+				   			<td class="first_col" valign="top" >座右铭</td>
+				   			<td><textarea name="motto"><{$motto}></textarea></td>
+						</tr>
+						<tr>
+				   			<td class="first_col"></td>
+				   			<td>
+								<input class="button pink" type="submit" onclick="return check_input()" value="保存" />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<!-- 我的好友 -->
+		<div class="tab-pane fade" id="friends">
+			<div class="content">
+				<div class="notdeveloped">敬请期待</div>
+			</div>
+		</div>
+		<!-- 我的账户 -->
+		<div class="tab-pane fade" id="account">
+			<div class="content">
+				<div class="notdeveloped">敬请期待</div>
+			</div>
+		</div>
+		<!-- 消息盒子 -->
+		<div class="tab-pane fade" id="notify">
+			<div class="content">
+				<div class="notdeveloped">敬请期待</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script>
+	// 初始化性别
+	var sex = document.getElementById("gender_" + "<{$sex}>");
+	sex.checked = "checked";
+	// 初始化身份
+	var iden_i = "<{$identity}>";
+	if(iden_i != 0) {
+		var iden = document.getElementById("iden_" + iden_i);
+		iden.checked = "checked";
+	}
+	var hint = document.getElementById("hint");
+	hint.style.visibility = "hidden";
+	var error = <{$error}>;
+	if(error == 1) {
+		var name_error = document.getElementById("name_error");
+		name_error.innerHTML = "昵称重复";
+		name_error.style.visibility = "visible";
+	} else if(error == 2) {	// 保存成功
+		hint.style.visibility = "visible";
+		hide(hint, 0.01);	// 几秒后消失
+	}
+
+	// 检查输入是否合法
+	function check_input() {
+		var name = document.getElementById("name").value;
+		var goal = document.getElementById("goal").value;
+		var name_error = document.getElementById("name_error");
+		var goal_error = document.getElementById("goal_error");
+		var skip = true; // 是否跳转
+
+		if(name.length == 0) {
+			name_error.style.visibility = "visible";
+			name_error.innerHTML = "不可以为空";
+			skip = false;
+		} else {
+			name_error.style.visibility = "hidden";
+		}
+
+		if(goal.length == 0) {
+			goal_error.style.visibility = "visible";
+			goal_error.innerHTML = "不可以为空";
+			skip = false;
+		} else if(goal <= 0) {
+			goal_error.style.visibility = "visible";
+			goal_error.innerHTML = "请输入大于0的数";
+			skip = false;
+		} else {
+			goal_error.style.visibility = "hidden";
+		}
+		return skip;
+	}
+</script>
+</html>

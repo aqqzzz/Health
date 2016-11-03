@@ -1,0 +1,171 @@
+<!-- 作者：陈云龙 -->
+<!-- 时间：2015-10-31 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>喵喵运动社区</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-modify.css" rel="stylesheet">
+	<link href="css/activity.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/my.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.php">喵喵运动</a>
+	</div>
+	<div class="nav-center">
+		<ul class="nav navbar-nav">
+			<li><a href="index.php">首页 </i></a></li>
+			<li><a href="race.php">竞赛 </a></li>
+			<li class="active"><a href="activity.php">活动 </a></li>
+			<li><a href="interest.php">兴趣组 </a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="user.php"><img class="avatar" src="<{$avatar}>"> <{$name}></a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container box">
+	<ul class="nav nav-tabs nav-stacked sidebar">
+		<li role="presentation"><a href="#recommend" data-toggle="tab">活动推荐</a></li>
+		<li role="presentation" class="active"><a href="#all" data-toggle="tab">全部活动</span></a></li>
+		<li role="presentation"><a href="#participate" data-toggle="tab">我参与的</a></li>
+		<li role="presentation"><a href="#history" data-toggle="tab">历史活动</a></li>
+		<{$add_activity}>
+	</ul>
+	<div class="tab-content">
+		<span id="hint" class="success">发布成功</span>
+		<!-- 活动推荐 -->
+		<div class="tab-pane fade" id="recommend">
+			<div class="content">
+				<div class="content">
+					<div class="notdeveloped">敬请期待</div>
+				</div>
+			</div>
+		</div>
+		<!-- 全部活动 -->
+		<div class="tab-pane fade in active" id="all">
+			<!--<div class="input-group input-group-sm">
+				<input type="text" class="form-control" aria-describedby="sizing-addon3" placeholder="搜索活动……">
+				<span class="input-group-addon" id="sizing-addon3"><a href="#"><span style="color:white" class="glyphicon glyphicon-search" aria-hidden="true"></span></a></span>
+			</div>-->
+			<{foreach from = $activity_list key = id item = "activity"}>
+       			<div id="div_<{$activity['id']}>_all" class="content">
+					<{if $identity eq 0}>
+						<input id="<{$activity['id']}>_all" class="button pink" type="submit" onclick="AJAX('all','activity_op.php', '<{$activity['id']}>')" value="删除" />
+						<!-- <input class="button pink" type="submit" value="修改" /> -->
+					<{else}>
+						<{if $activity['sign'] eq 1}>
+							<input id="<{$activity['id']}>_all" class="button pink" type="submit" onclick="AJAX('all','activity_op.php', '<{$activity['id']}>')" value="退出" />
+						<{else}>
+							<input id="<{$activity['id']}>_all" class="button pink" type="submit" onclick="AJAX('all','activity_op.php', '<{$activity['id']}>')" value="参加" />
+						<{/if}>
+					<{/if}>
+					<div class="title"><{$activity['title']}></div>
+       				<div class="info">
+						<div class="time"><span>时间：</span><{$activity['a_time']}></div>
+						<div class="place"><span>地点：</span><{$activity['place']}></div>
+						<div class="num"><span>已参加人数：</span id="num"><{$activity['num']}></div>
+					</div>
+					<div class="descript"><span>详细信息：</span><{$activity['info']}></div>
+				</div>
+			<{/foreach}>
+		</div>
+		<!-- 我参与的 -->
+		<div class="tab-pane fade" id="participate">
+			<{foreach from = $user_activity key = id item = "activity"}>
+       			<div id="div_<{$activity['id']}>_my" class="content">
+					<{if $identity eq 0}>
+						<input id="<{$activity['id']}>_all" class="button pink" type="submit" onclick="AJAX('all','activity_op.php', '<{$activity['id']}>')" value="删除" />
+						<!-- <input class="button pink" type="submit" value="修改" /> -->
+					<{else}>
+						<input id="<{$activity['id']}>_my" class="button pink" type="submit" onclick="AJAX('my', 'activity_op.php', '<{$activity['id']}>')" value="退出" />
+					<{/if}>
+					<div class="title"><{$activity['title']}></div>
+       				<div class="info">
+						<div class="time"><span>时间：</span><{$activity['a_time']}></div>
+						<div class="place"><span>地点：</span><{$activity['place']}></div>
+						<div class="num"><span>已参加人数：</span><{$activity['num']}></div>
+					</div>
+					<div class="descript"><span>详细信息：</span><{$activity['info']}></div>
+				</div>
+			<{/foreach}>
+		</div>
+		<!-- 历史活动 -->
+		<div class="tab-pane fade" id="history">
+			<{foreach from = $history_act key = id item = "activity"}>
+       			<div id="div_<{$activity['id']}>_all" class="content">
+					<div class="title"><{$activity['title']}></div>
+       				<div class="info">
+						<div class="time"><span>时间：</span><{$activity['a_time']}></div>
+						<div class="place"><span>地点：</span><{$activity['place']}></div>
+						<div class="num"><span>已参加人数：</span id="num"><{$activity['num']}></div>
+					</div>
+					<div class="descript"><span>详细信息：</span><{$activity['info']}></div>
+				</div>
+			<{/foreach}>
+		</div>
+		<!-- 活动发布 -->
+		<div class="tab-pane fade" id="add">
+			<div class="content">
+				<{$form_activity}>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script>
+	var hint = document.getElementById("hint");
+	hint.style.visibility = "hidden";
+	var error = <{$error}>;
+	if(error == 2) {	// 保存成功
+		hint.style.visibility = "visible";
+		hint.innerHTML = "发布成功";
+		hint.style.opacity = 1;
+		hide(hint, 0.01);	// 几秒后消失
+	}
+
+	// 检查输入是否合法
+	function check_input() {
+		var add_title = document.getElementById("add_title").value;
+		var place = document.getElementById("place").value;
+		var time = document.getElementById("time").value;
+		var time_error = document.getElementById("time_error");
+		var title_error = document.getElementById("title_error");
+		var place_error = document.getElementById("place_error");
+		var skip = true; // 是否跳转
+		if(add_title.length == 0) {
+			title_error.style.visibility = "visible";
+			title_error.innerHTML = "请输入标题";
+			skip = false;
+		} else {
+			add_title_error.style.visibility = "hidden";
+		}
+
+		if(place.length == 0) {
+			place_error.style.visibility = "visible";
+			place_error.innerHTML = "请输入地点";
+			skip = false;
+		} else {
+			place_error.style.visibility = "hidden";
+		}
+
+		if(time.length == 0) {
+			time_error.style.visibility = "visible";
+			time_error.innerHTML = "请输入时间";
+			skip = false;
+		} else {
+			time_error.style.visibility = "hidden";
+		}
+		return skip;
+	}
+
+</script>
+</html>

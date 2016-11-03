@@ -1,0 +1,47 @@
+/*
+ * 2015-10-31
+ * Created by cylong
+ */
+
+div.content {
+ 	background-color: rgba(255,255,255,0.9);
+ 	width: 65%;
+ 	min-width: 500px;
+ 	height: auto;
+ 	margin: 0 auto 20px;
+ 	padding: 20px 15px;
+ }
+
+.profile_list {
+	width: 100%;
+}
+
+.profile_list td {
+    padding: 20px;
+}
+
+.profile_list .first_col {
+	text-align: right;
+	width: 30%;
+}
+
+.profile_list input[type="text"] {
+    border: 1px solid #CCCCCC;
+    width: 90px;
+    padding: 0 5px;
+}
+
+.profile_list input[name="goal"] {
+    text-align: center;
+    width: 45px;
+    padding: 0;
+}
+
+.profile_list input[name="name"] {
+    width: 130px;
+}
+
+.profile_list textarea {
+    width: 90%;
+	min-height: 80px;
+}

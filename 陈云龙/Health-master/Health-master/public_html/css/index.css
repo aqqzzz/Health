@@ -1,0 +1,206 @@
+/*
+ * 2015-10-30
+ * Created by cylong
+ * 首页有关的css代码
+ */
+
+div.content {
+	background-color: rgba(255,255,255,0.9);
+	width: 65%;
+	min-width: 500px;
+	height: auto;
+	margin: 0 auto 20px;
+	padding: 20px 15px;
+}
+
+/* 发布动态 */
+div#inputarea {
+	background-color: #F3726D;
+	width: 65%;
+	height: 178px;
+	padding: 15px;
+	margin: 0 auto 20px;
+}
+div#inputarea span {
+	color: #FFF;
+	width: 100%;
+	min-width: 180px;
+}
+
+div#inputarea textarea {
+	width: 100%;
+	min-height: 80px;
+	margin-top: 8px;
+	padding: 3px 4px;
+	resize: none;
+	outline-color: #FA7D3C;
+	border-color: #CCCCCC;
+}
+
+div#inputarea input[type="submit"] {
+	float: right;
+	background: #FFF;
+	border: 0px;
+	color: #666;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 8px 0 9px;
+	text-align: center;
+	width: 100px;
+	margin: 3px;
+	cursor: pointer;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+div#inputarea input[type="submit"]:hover {
+	background: #303030;
+	color: #FFF;
+}
+
+.title {
+	display: block;
+	color: #666;
+	font-size: 18px;
+	font-weight: 20;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	display: block;
+	color: #666;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 20;
+	width: 100%;
+	min-width: 100px;
+	margin: 10px auto;
+}
+
+.run-total {
+	margin: 20px 20px 0 0;
+	color: #666;
+}
+
+.sort-num {
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	float: left;
+	border-radius:50%;
+	background-color: #5BB734;
+	margin-right: 15px;
+	width: 20px;
+	text-align: center;
+}
+
+.sort-avatar {
+	width: 20px;
+	margin-right: 15px;
+}
+
+.em-big {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	border-radius:10%;
+	background-color: #F3726D;
+	text-align: center;
+	display:-moz-inline-box;
+	display:inline-block;
+	min-width: 50px;
+	padding: 1px 2px;
+	margin: 1px 4px;
+}
+
+.sort-info {
+	float: right;
+	margin: 0 10px;
+}
+
+.ranking-tab {
+	margin: 3px auto;
+}
+
+.bmi {
+	float: left;
+	text-align: center;
+	margin-left: 10%;
+	width: 30%;
+}
+
+.bmi input[type="submit"] {
+	float: none;
+	margin: 10px 0;
+}
+
+.bmi_img {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.bmi_val {
+	float: right;
+	text-align: center;
+	line-height: 130px;
+	color: #EEE;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	margin-right: 10%;
+	background: #F3726D;
+}
+
+.advice {
+	width: 65%;
+	height: 45px;
+	margin: 0 auto;
+}
+
+.advice_title {
+	background: #F3726D;
+	color: #EEE;
+	font-weight: bold;
+	height: auto;
+	padding: 3px 15px;
+	margin: -20px -15px 0;
+}
+
+.advice_title span {
+	float: right;
+	margin-right: 0px;
+}
+
+.advice_title img {
+	border-radius: 2px;
+	width: 20px;
+}
+
+.msg {
+	margin: 10px;
+}
+
+.user_info {
+	width: 100%;
+}
+
+.user_info td {
+	height: 25px;
+	width: 25px;
+}
+
+div .chart {
+	height: 300px;
+}
+
+.upfile {
+	width: 50%;
+}
+
+.upfile input[type="submit"] {
+	font-size: 12px;
+	line-height: 25px;
+	width: 0px;
+	height: 25px;
+}
